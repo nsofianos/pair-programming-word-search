@@ -31,7 +31,22 @@ describe("#wordSearch()", function() {
       ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
-    ], 'SEINFELD')
+    ], 'SEIN')
+
+    assert.isTrue(result);
+  });
+  it("should return true if LARRY is present", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['L', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
+      ['A', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['R', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['R', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'LARRY')
 
     assert.isTrue(result);
   });
